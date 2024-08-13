@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Cek Plagiarisme Skripsi/Thesis</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Cek Plagiarisme Skripsi/Thesis</h2>
+        <form id="plagiarismForm" enctype="multipart/form-data">
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text" id="nama" name="nama" required>
+
+            <label for="nim">NIM:</label>
+            <input type="text" id="nim" name="nim" required>
+
+            <label for="program_studi">Program Studi:</label>
+            <select id="program_studi" name="program_studi" required>
+                <option value="">--Pilih Program Studi--</option>
+                <option value="Teknik Informatika">Teknik Informatika</option>
+                <option value="Sistem Informasi">Sistem Informasi</option>
+                <option value="Manajemen">Manajemen</option>
+                <option value="Akuntansi">Akuntansi</option>
+                <!-- Tambahkan pilihan lainnya jika diperlukan -->
+            </select>
+
+            <label for="konsentrasi">Konsentrasi:</label>
+            <select id="konsentrasi" name="konsentrasi" required>
+                <option value="">--Pilih Konsentrasi--</option>
+                <option value="Kecerdasan Buatan">Kecerdasan Buatan</option>
+                <option value="Pengembangan Perangkat Lunak">Pengembangan Perangkat Lunak</option>
+                <option value="Keuangan">Keuangan</option>
+                <option value="Pemasaran">Pemasaran</option>
+                <!-- Tambahkan pilihan lainnya jika diperlukan -->
+            </select>
+
+            <label for="judul">Judul Skripsi/Thesis:</label>
+            <input type="text" id="judul" name="judul" required>
+
+            <label for="file">Unggah File Skripsi/Thesis (PDF/DOCX):</label>
+            <input type="file" id="file" name="file" accept=".pdf, .docx" required>
+
+            <label for="whatsapp">Nomor WhatsApp:</label>
+            <input type="text" id="whatsapp" name="whatsapp" placeholder="Contoh: 081234567890" required>
+
+            <button type="submit">Cek Plagiarisme</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="gaya.js"></script>
+</body>
+</html>
